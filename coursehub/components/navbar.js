@@ -16,7 +16,6 @@ const Navbar = () => {
     const [id,setid] = useState(null);
     const [path,setpath] = useState("");
     const [courses,setcourses] = useState(null);
-    const [userdata,setuserdata] = useState(null);
     
     
     useEffect(() => {
@@ -27,9 +26,9 @@ const Navbar = () => {
             })
             .then(response =>{
                 setcourses(true)
-                setuserdata(response.data)
-                setid(response.data.student_id)
                 setpath("privateStudentProfile")
+                setid(response.data.student_id)
+
             })
             .catch(()=>{
                 axios.post('http://localhost:4200/api/auth/teacher/getOneByToken',{
@@ -37,10 +36,10 @@ const Navbar = () => {
                 })
                 .then(response =>{
                     setcourses(false)
-                    setuserdata(response.data)
 
-                    setid(response.data.teacher_id)
                     setpath("privateTeacherProfile")
+                    setid(response.data.teacher_id)
+
     
                 })
                 .catch(err=>{

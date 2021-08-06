@@ -4,7 +4,6 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import ReactDOM from "react-dom";
-import Modal from "react-modal";
 import React from "react";
 
 export const getStaticPaths = async () => {

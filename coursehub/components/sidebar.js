@@ -209,9 +209,9 @@ const DrawerPage = (props) => {
                   />
                 </svg>
               </span>
-              <Link href="/">
+              <a href="/">
                 <span className="ml-2">Homepage</span>
-              </Link>
+              </a>
             </li>
 
             <li className="mb-2 px-4 py-4 text-gray-600 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded ">
@@ -258,27 +258,7 @@ const DrawerPage = (props) => {
                 <span className="ml-2">Chat room</span>
               </a>
             </li>
-            <li className="mb-2 px-4 py-4 text-gray-600 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded ">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </span>
-              <a href="#">
-                <span className="ml-2">About us</span>
-              </a>
-            </li>
+        
           </ul>
         </>
       );
@@ -349,12 +329,7 @@ const DrawerPage = (props) => {
       <Drawer isOpen={isOpen} toggle={toggle} position="left">
         <DrawerHeader>
           {" "}
-          <div class="w-1/2">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/coursehub-619.appspot.com/o/posts%2Flogo%20(1).png?alt=media&token=f67f7d72-e742-4fa9-a2d7-1a0e659ff737"
-              class="mx-auto w-18 h-16 "
-            />
-          </div>
+
         </DrawerHeader>
         <DrawerBody>
           <div class="mt-10 mb-4">{profileFunc()}</div>
