@@ -276,6 +276,14 @@ const Chat = () => {
             </div>
           </div>
         </div>
+        <a className="place-self-center" href={`/feedback`}>
+          <button
+            // onClick={}
+            className="py-3 my-8 px-4  place-self-center text-lg bg-gradient-to-r from-blue-300 to-blue-600 rounded-xl text-white"
+          >
+            give your feedback
+          </button>
+        </a>
       </div>
     </>
   );

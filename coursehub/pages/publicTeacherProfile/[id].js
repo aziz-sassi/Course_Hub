@@ -71,7 +71,7 @@ const Details = ({ data, blogs, teacherId }) => {
     e.target.reset();
   };
 
-  console.log(teacherId, "where man");
+  console.log(data, "where man");
   return (
     <div>
       <div className="max-w-7xl flex items-center h-auto  flex-wrap mx-auto my-32 lg:my-0">
@@ -89,7 +89,7 @@ const Details = ({ data, blogs, teacherId }) => {
                 edit={false}
                 count={5}
                 size={20}
-                value={Number(data.Overall_rating)}
+                value={Number(data.sumOfRates / data.numberOfRates)}
                 activeColor="#FFD700"
               />
             </div>

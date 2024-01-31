@@ -12,7 +12,7 @@ router.get(`/posts/:id`, teacher.getTeacherPosts); //
 
 router.put(`/update/profile/:id`, teacher.updateTeacherProfile); //
 
-router.put(`/form/feedback/:id`, teacher.feedBackForm); //
+router.put(`/form/feedback`, teacher.feedBackForm); //
 
 router.get(`/all/posts/:id`, teacher.getAllteachersPosts); //
 

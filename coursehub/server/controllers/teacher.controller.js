@@ -58,13 +58,18 @@ exports.getTeacherPosts = async (req, res) => {
 };
 
 exports.feedBackForm = async (req, res) => {
+  console.log(
+    req.body.body.email,
+    req.body.body.average,
+    "bodyyyyyyyyyyyyyyyyyyyy"
+  );
   let feedback = await prisma.teacher.update({
     where: {
-      teacher_id: Number(req.params.id),
+      teacher_id: 1,
     },
     data: {
       sumOfRates: { increment: req.body.body.average },
-      numberOfaRtes: { increment: 1 },
+      numberOfRates: { increment: 1 },
     },
   });
 };

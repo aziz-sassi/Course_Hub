@@ -52,7 +52,10 @@ const Student = ({ student }) => {
           <div className="flex justify-center">
             <Image
               className="h-14 w-10 rounded-full mr-2 object-cover"
-              src={student.image}
+              src={
+                student.image ||
+                "https://firebasestorage.googleapis.com/v0/b/coursehub-619.appspot.com/o/posts%2F109815470-man-avatar-profile-male-face-icon-vector-illustration-.jpg?alt=media&token=c85f5521-e6aa-4d01-a3af-a803937fe9cb"
+              }
               width={180}
               height={160}
               alt={""}
